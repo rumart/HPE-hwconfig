@@ -1,0 +1,43 @@
+<RIBCL VERSION="2.0">
+ <LOGIN USER_LOGIN="adminname" PASSWORD="password">
+ <DIR_INFO MODE="write">
+ <MOD_DIR_CONFIG>
+ <DIR_AUTHENTICATION_ENABLED value="Y"/>
+ <DIR_LOCAL_USER_ACCT value="Y"/>
+ <DIR_SERVER_ADDRESS value="ip_to_domain_controller"/>
+ <DIR_SERVER_PORT value="636"/>
+ <DIR_OBJECT_DN value=""/>
+ <DIR_USER_CONTEXT_1 value="OU=aaa,OU=bbb,OU=ccc,DC=domain,DC=name"/>
+ <DIR_USER_CONTEXT_2 value=""/>
+ <DIR_USER_CONTEXT_3 value=""/>
+ <DIR_USER_CONTEXT_4 value=""/>
+ <DIR_USER_CONTEXT_5 value=""/>
+ <DIR_USER_CONTEXT_6 value=""/>
+ <DIR_USER_CONTEXT_7 value=""/>
+ <DIR_USER_CONTEXT_8 value=""/>
+ <DIR_USER_CONTEXT_9 value=""/>
+ <DIR_USER_CONTEXT_10 value=""/>
+ <DIR_USER_CONTEXT_11 value=""/>
+ <DIR_USER_CONTEXT_12 value=""/>
+ <DIR_USER_CONTEXT_13 value=""/>
+ <DIR_USER_CONTEXT_14 value=""/>
+ <DIR_USER_CONTEXT_15 value=""/>
+ <DIR_ENABLE_GRP_ACCT value = "Y"/>
+ <DIR_GRPACCT1_NAME VALUE= "Administrators"/>
+ <DIR_GRPACCT1_PRIV VALUE= "1,2,3,4,5,6"/>
+ <DIR_GRPACCT1_SID VALUE= ""/>
+ <DIR_GRPACCT2_NAME VALUE= "CN=admin_group,OU=aaa,OU=bbb,DC=domain,DC=name"/>
+ <DIR_GRPACCT2_PRIV VALUE= "1,2,3,4,5,6"/>
+ <DIR_GRPACCT2_SID VALUE= ""/>
+ <DIR_GRPACCT3_NAME VALUE= "CN=read_group,OU=aaa,OU=bbb,DC=domain,DC=name"/>
+ <DIR_GRPACCT3_PRIV VALUE= "6"/>
+ <DIR_GRPACCT3_SID VALUE= ""/>
+ <DIR_GENERIC_LDAP_ENABLED VALUE="N"/>
+ <DIR_KERBEROS_ENABLED value="N"/>
+ <DIR_KERBEROS_REALM VALUE=""/>
+ <DIR_KERBEROS_KDC_ADDRESS VALUE=""/>
+ <DIR_KERBEROS_KDC_PORT VALUE="88"/>
+ </MOD_DIR_CONFIG>
+ </DIR_INFO>
+ </LOGIN>
+ </RIBCL>
