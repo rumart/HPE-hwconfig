@@ -7,9 +7,10 @@
     .NOTES
         Author: Rudi Martinsen / Intility AS
         Date : 06/02-2018
-        Version : 1.0.0
-        Revised : 
+        Version : 1.1.0
+        Revised : 26/03-2018
         Changelog:
+        1.1.0 -- Changed to Invoke-HPiLORIBCLCommand for LDAP integration
     .LINK        
         https://github.com/HewlettPackard/POSH-HPOneView
     .LINK        
@@ -96,11 +97,8 @@ Start-Sleep -Seconds 120
 
 #Add directory config & groups
 Write-Verbose "Configuring Active Directory Integration"
-$command = @"
-HPQLOCFG.exe -s $ILOIp -f D:\Scripts\rib\ldap_config.xml -u $newadmin -p "$pass"
-"@
-
-Invoke-Expression -Command:$command
+$ribcmd = ([string](Get-Content "D:\Scripts\rib\ldap_config.xml"))
+Invoke-HPiLORIBCLCommand -Server $ILOIp -Username $newadmin -Password $pass -DisableCertificateAuthentication -RIBCLCommand $ribcmd
 
 #Connect to bios
 Write-Verbose "Gathering information from BIOS"
