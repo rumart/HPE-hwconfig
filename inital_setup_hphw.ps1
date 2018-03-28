@@ -7,9 +7,10 @@
     .NOTES
         Author: Rudi Martinsen / Intility AS
         Date : 06/02-2018
-        Version : 1.1.0
-        Revised : 26/03-2018
+        Version : 1.1.1
+        Revised : 28/03-2018
         Changelog:
+        1.1.1 -- Fixed typo in parameter name in help text
         1.1.0 -- Changed to Invoke-HPiLORIBCLCommand for LDAP integration
     .LINK        
         https://github.com/HewlettPackard/POSH-HPOneView
@@ -39,7 +40,7 @@
         The OneView instance to add the server to
     .PARAMETER HostType
         Parameter to control which profile template to use
-    .PARAMETER AddOneView
+    .PARAMETER RemoveDefaultAdmin
         Switch parameter to control if the default admin should be removed    
 #>
 [cmdletbinding()]
