@@ -1,15 +1,19 @@
-﻿<#
+﻿#Requires -Modules HPiLOCmdlets, HPEBIOSCmdlets, HPOneView.310
+<#
     .SYNOPSIS
         The script will set inital iLO config for a HPE server and add it to OneView
     .DESCRIPTION
         The script creates a new iLO admin user, sets the correct name and DNS server
         in iLO and adds the server to OneView and creates and assigns a Server Profile to it
+
+        The script requires the HPiLOCmdlets and HPOneView powershell modules
     .NOTES
         Author: Rudi Martinsen / Intility AS
         Date : 06/02-2018
-        Version : 1.1.1
+        Version : 1.2.0
         Revised : 28/03-2018
         Changelog:
+        1.2.0 -- Adding #Requires
         1.1.1 -- Fixed typo in parameter name in help text
         1.1.0 -- Changed to Invoke-HPiLORIBCLCommand for LDAP integration
     .LINK        
